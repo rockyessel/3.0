@@ -20,7 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(false);
-    const provider = new Web3.providers.HttpProvider('http://127.0.0.1:3333');
+    const provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
 
     console.log('provider: ', provider);
 
@@ -75,7 +75,7 @@ const Home = () => {
             GeneratedSolAsset.date
           )
           .send({
-            from: '0xfC54822804feDCF823893F698F681E38C0242AB4',
+            from: '0xBAcaB12c09A6516FD18dB74C863d0b912E7bf8d6',
             gas: '500000',
             gasPrice: gasPrice,
           })
